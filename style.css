@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jersey 10";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(image/img.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40vh;
+  margin-left: 60px;
+  border-radius: 10px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.container h1 {
+  font-size: 50px;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+.container #btn {
+  width: 130px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  color: #fff;
+  border: 1px solid red;
+  background: linear-gradient(
+    to right bottom,
+    rgba(10, 10, 125, 0.2),
+    rgba(67, 50, 199, 0.1)
+  );
+}
+
+.container #btn:hover {
+  background: rgb(200, 32, 200);
+  color: black;
+  border: none;
+}
+
+@media (max-width: 1090px) {
+    .container {
+        width: 60%;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: 80%;
+        height: 40vh;
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        width: 90%;
+        height: 50vh;
+        margin: 0 20px;
+        text-align: center;
+    }
+}
